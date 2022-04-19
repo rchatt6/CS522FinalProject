@@ -7,6 +7,16 @@ public class Vendor {
     String name;
     Switch aSwitch;
 
+    public Boolean getState() {
+        return state;
+    }
+
+    public void setState(Boolean state) {
+        this.state = state;
+    }
+
+    Boolean state = false;
+
     public String getName() {
         return name;
     }

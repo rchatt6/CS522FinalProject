@@ -82,6 +82,22 @@ public class AdapterVendor extends RecyclerView.Adapter<AdapterVendor.CustomView
         //holder.aSwitch.setChecked(VendorList.get(position).aSwitch.isChecked());
         Log.d("switch", "ooutside");
 
+        holder.aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                    if (b) {
+                        //Toast.makeText(compoundButton.getContext(), "hi", Toast.LENGTH_SHORT).show();
+                        //getAdapterPosition();
+                        compoundButton.setChecked(true);
+                        VendorList.get(position).setState(!b);
+                    }
+                    else {
+                        compoundButton.setChecked(false);
+                        VendorList.get(position).setState(!b);
+                    }
+                }
+            });
+
 
     }
 

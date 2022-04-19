@@ -6,13 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--app:layout_constraintTop_toBottomOf="@id/bottom_navigation"--><![CDATA[ />
+
+    ]]>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewMain"
-        android:layout_width="391dp"
-        android:layout_height="566dp"
+        android:layout_width="385dp"
+        android:layout_height="527dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-        <!--app:layout_constraintTop_toBottomOf="@id/bottom_navigation"--> />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -29,14 +32,14 @@
 
     <TextView
         android:id="@+id/textViewMain"
-        android:layout_width="296dp"
-        android:layout_height="34dp"
+        android:layout_width="288dp"
+        android:layout_height="24dp"
         android:text="  Your Orders"
         android:textColor="@android:color/secondary_text_dark"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/recyclerViewMain"
-        app:layout_constraintTop_toTopOf="@id/recyclerViewMain" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
