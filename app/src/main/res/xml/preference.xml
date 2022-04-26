@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="Account">
+        <EditTextPreference
+            android:key="Name"
+            android:title="@string/NA1"
+            android:summary="@string/NA2"
+            android:icon="@drawable/pic"
+            app:useSimpleSummaryProvider="true"/> //not working
+        <EditTextPreference
+            android:key="Phone"
+            android:title="@string/T1"
+            android:summary="@string/T3"
+            app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+            android:key="Address"
+            android:title="@string/A1"
+            android:summary="@string/A2"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory android:title="Notifications">
+        <MultiSelectListPreference
+            android:defaultValue="@array/pref_order_stage"
+            android:dialogTitle="@string/N1"
+            android:entries="@array/pref_order_stage"
+            android:entryValues="@array/pref_order_stage"
+            android:key="@array/pref_order_stage"
+            android:summary="@string/N3"
+            android:title="@string/N2" />
+
+        <MultiSelectListPreference
+            android:defaultValue="@array/pref_ways"
+            android:dialogTitle="@string/W1"
+            android:entries="@array/pref_ways"
+            android:entryValues="@array/pref_ways"
+            android:key="@array/pref_ways"
+            android:summary="@string/W2"
+            android:title="@string/W1" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Advanced">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="Developer mode"
+            android:summary="@string/D2"
+            android:title="@string/D1" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="Turbo mode"
+            android:summary="@string/TU2"
+            android:title="@string/TU1" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

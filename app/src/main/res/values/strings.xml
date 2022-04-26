@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Unified Shopping</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+
+    <string name="N1">Order Stage</string>
+    <string name="N2">Order Stage Notifications</string>
+    <string name="N3">Which delivery stage do you want to be notified?</string>
+    <string name="W1">Ways of Notifications </string>
+    <string name="W2">How do you want to be notified?</string>
+    <string name="T1">Phone Number</string>
+    <string name="T2"></string>
+    <string name="T3">123-456-7898</string>
+    <string name="NA1">Name</string>
+    <string name="NA2">Harris</string>
+    <string name="A1">Address</string>
+    <string name="A2">1600 Pennsylvania Avenue NW, Washington DC 20500</string>
+    <string name="D1">Developer mode</string>
+    <string name="D2">WARNING</string>
+    <string name="TU2">Drain the battery!!!!</string>
+    <string name="TU1">Turbo Mode</string>
+
+    <string-array name="pref_order_stage">
+        <item>New Order created</item>
+        <item>Shipped</item>
+        <item>In transit</item>
+        <item>Out for delivery</item>
+        <item>Delivered</item>
+    </string-array>
+
+    <string-array name="pref_ways">
+        <item>Emails</item>
+        <item>Text message</item>
+        <item>Pop up windows</item>
+        <item>Yelling</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/PriorityIndicator"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/orderImg"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/Order_Pic"
+        android:layout_width="189dp"
+        android:layout_height="227dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/InTransit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:text="In Transit"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/VendorName"
+        app:layout_constraintTop_toTopOf="@+id/VendorName" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="101dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="48dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/InTransit"
+        app:layout_constraintTop_toTopOf="@+id/InTransit" />
+
+    <TextView
+        android:id="@+id/VendorName"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="56dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iProgressBar" />
+
+    <ImageView
+        android:id="@+id/iProgressBar"
+        android:layout_width="383dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Order_Pic"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/Order_Price"
+        android:layout_width="176dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="11dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Order_Pic"
+        app:layout_constraintTop_toBottomOf="@+id/Order_Name" />
+
+    <TextView
+        android:id="@+id/Order_Name"
+        android:layout_width="164dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="21dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Order_Pic"
+        app:layout_constraintTop_toBottomOf="@+id/Delivery_Status" />
+
+    <TextView
+        android:id="@+id/Order_Description"
+        android:layout_width="386dp"
+        android:layout_height="187dp"
+        android:inputType="textMultiLine"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DatePlaced" />
+
+    <TextView
+        android:id="@+id/Delivery_Status"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PriorityIndicator" />
+
+    <TextView
+        android:id="@+id/DatePlaced"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="9dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address" />
+
+    <!--<LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="470dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="225dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toTopOf="@+id/Order_Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/Order_Name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Order_Price"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Order_Description"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Delivery_Status"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/DatePlaced"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/VendorName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="TextView" />
+    </LinearLayout>-->
+
+    <!--<Button
+        android:id="@+id/Website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="596dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="87dp"
+        android:text="Go to the website"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
